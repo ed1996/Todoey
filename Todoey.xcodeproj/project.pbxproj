@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F22C5DC1215036100026713C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22C5DC0215036100026713C /* Item.swift */; };
 		F23889F021388C0F0064DB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23889EF21388C0F0064DB52 /* AppDelegate.swift */; };
 		F23889F221388C0F0064DB52 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23889F121388C0F0064DB52 /* TodoListViewController.swift */; };
 		F23889F521388C0F0064DB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23889F321388C0F0064DB52 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F22C5DC0215036100026713C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F23889EC21388C0F0064DB52 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23889EF21388C0F0064DB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F23889F121388C0F0064DB52 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -35,10 +37,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F22C5DC2215036270026713C /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				F22C5DC0215036100026713C /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		F22C5DC3215036380026713C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F23889F121388C0F0064DB52 /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F22C5DC4215036440026713C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F23889F321388C0F0064DB52 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F22C5DC5215036520026713C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				F23889F621388C110064DB52 /* Assets.xcassets */,
+				F23889F821388C110064DB52 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		F23889E321388C0F0064DB52 = {
 			isa = PBXGroup;
 			children = (
 				F23889EE21388C0F0064DB52 /* Todoey */,
+				F23889FB21388C110064DB52 /* Info.plist */,
 				F23889ED21388C0F0064DB52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,11 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				F23889EF21388C0F0064DB52 /* AppDelegate.swift */,
-				F23889F121388C0F0064DB52 /* TodoListViewController.swift */,
-				F23889F321388C0F0064DB52 /* Main.storyboard */,
-				F23889F621388C110064DB52 /* Assets.xcassets */,
-				F23889F821388C110064DB52 /* LaunchScreen.storyboard */,
-				F23889FB21388C110064DB52 /* Info.plist */,
+				F22C5DC3215036380026713C /* Controllers */,
+				F22C5DC2215036270026713C /* Data Model */,
+				F22C5DC4215036440026713C /* Views */,
+				F22C5DC5215036520026713C /* Supporting files */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F23889F221388C0F0064DB52 /* TodoListViewController.swift in Sources */,
+				F22C5DC1215036100026713C /* Item.swift in Sources */,
 				F23889F021388C0F0064DB52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
